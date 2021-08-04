@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ultimatechain</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../ultimatechain.io/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ultimatechain.io/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ultimatechain.io/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../ultimatechain.io/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../ultimatechain.io/css/odometer-theme-train-station.css">
+    <link rel="stylesheet" href="../ultimatechain.io/css/style_120.css">
+    <link rel="stylesheet" href="../ultimatechain.io/css/responsive.css">
+    <meta name="upline" content="T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb">
+    <meta name="sc.balance" content="0">
+    <meta name="currentprice" content="11116000">
+    <meta name="totalusers" content="37">
+    <meta name="totalpurchases" content="3739000000">
+
+</head>
+
+<body class="darker-blue">
+<div id="App">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="dream-load"></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area wow fadeInDown" data-wow-delay="0.2s">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="dreamNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="../ultimatechain.io/"><img src="../ultimatechain.io/img/core-img/logo60_1.svg" alt="logo"> Ultimatechain</a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="#home">{{ $t('message.home') }}</a></li>
+                                <!--
+                                <li><a href="#roadmap">Roadmap</a></li>
+                                <li><a href="#distribution">Distribution</a></li>
+                                -->
+                            </ul>
+
+                            <!-- Button -->
+                            <a href="#purchase" class="btn login-btn ml-50">{{ $t('message.start') }}</a>
+
+                            <div class="header__item">
+
+                                <div class="header__value lang">
+                                    <div><img :src="'https://api.smartcontract.ru/cdn/flags/'+$i18n.locale+'.svg'">{{ $t('message.language') }}</div>
+                                    <ul>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'en'" href="lang%3Den.html"><img src="https://api.smartcontract.ru/cdn/flags/en.svg"> English</a>
+                                        </li>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'ru'" href="lang%3Dru.html"><img src="https://api.smartcontract.ru/cdn/flags/ru.svg"> Русский</a>
+                                        </li>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'es'" href="lang%3Des.html"><img src="https://api.smartcontract.ru/cdn/flags/es.svg"> Español</a>
+                                        </li>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'in'" href="lang%3Din.html"><img src="https://api.smartcontract.ru/cdn/flags/in.svg"> हिन्दी</a>
+                                        </li>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'fr'" href="lang%3Dfr.html"><img src="https://api.smartcontract.ru/cdn/flags/fr.svg"> Français</a>
+                                        </li>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'zh'" href="lang%3Dzh.html"><img src="https://api.smartcontract.ru/cdn/flags/zh.svg"> 中国</a>
+                                        </li>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'ir'" href="lang%3Dir.html"><img src="https://api.smartcontract.ru/cdn/flags/ir.svg"> فارسی</a>
+                                        </li>
+                                        <li>
+                                            <a @click.prevent="$i18n.locale = 'ae'" href="lang%3Dae.html"><img src="https://api.smartcontract.ru/cdn/flags/ae.svg"> العربية</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Welcome Area Start ##### -->
+    <section class="welcome_area clearfix dzsparallaxer auto-init" data-options="{direction: "normal"}" id="home">
+        <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url(../ultimatechain.io/img/bg-img/bg-2.jpg)"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content dark-blue">
+            <!-- blip -->
+            <div class="dream-blip blip1"></div>
+            <div class="dream-blip blip2"></div>
+            <div class="dream-blip blip3"></div>
+            <div class="dream-blip blip4"></div>
+
+            <div class="container h-100">
+                <div class="row align-items-center">
+                    <!-- Welcome Content -->
+                    <div class="col-12 col-lg-6 col-md-12">
+                        <div class="welcome-content ill">
+
+                            <div class="promo-section">
+                                <div class="integration-link">
+                                    <span class="integration-icon">
+                                        <img src="../ultimatechain.io/img/svg/img-warning_1.svg" width="24" height="24" alt>
+                                    </span>
+                                    <span class="integration-text">WARNING! FAKE TTwGYfocGYHWdVETs8iq7q3EzHoMJ9YMon</span>
+                                </div>
+                            </div>
+
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s">{{ $t('message.h1') }}</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s">{{ $t('message.title') }}</p>
+                            <div class="row">
+                                <div class="counter-wrapper col-12 col-lg-6 col-md-12">
+                                    <span>{{ $t('message.totalusers') }}  </span>
+                                    <div class="odometer" ref="odometer1">{{ contract.totalbuyers }}</div>
+                                </div>
+                                <div class="counter-wrapper col-12 col-lg-6 col-md-12">
+                                    <span>{{ $t('message.totalpurchases') }}  </span>
+                                    <div class="odometer" ref="odometer2">{{ contract.totalpurchases }}</div>
+                                </div>
+                            </div>
+                            <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="https://tronscan.io/#/token20/TYrtfghuDzuVy9dux67bMbpe2STPh97GDr" target="_blank" class="btn dream-btn mr-3">UCHT Token</a>
+                                <a href="#purchase" class="btn dream-btn mr-3">{{ $t('message.start') }}</a>
+                                <a href="https://t.me/ultimatechainbot?start=4273810310" target="_blank" class="btn dream-btn">{{ $t('message.purchase7') }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Welcome Video Area -->
+                    <div class="col-12 col-lg-6 col-md-12">
+                        <div class="main-ilustration wow fadeInUp" data-wow-delay="0.5s">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Welcome Area End ##### -->
+
+    <div class="vertical-social">
+        <ul>
+            <li><a href="https://t.me/ultimatechain_maingroup" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/DefiDeveloperIco/ultimatechain" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://medium.com/@ultimatechain" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/ultimate_UCHT" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://instagram.com/ultimate_chain?igshid=1wja1rtbnfywc" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- ##### Our Services Area Start ##### -->
+    <section class="our_services_area clearfix" id="services">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">{{ $t('message.structure1') }}</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s"></p>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img src="../ultimatechain.io/img/services/2.svg" alt>
+                        </div>
+                        <h6>{{ user.income }}</h6>
+                        <p>{{ $t('message.structure2') }}</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow fadeInUp" data-wow-delay="0.7s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img src="../ultimatechain.io/img/services/6.svg" alt>
+                        </div>
+                        <h6>{{ user.structure }}</h6>
+                        <p>{{ $t('message.structure3') }}</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img src="../ultimatechain.io/img/services/5.svg" alt>
+                        </div>
+                        <h6><button class="btn" @click="mapmodal.show = true">{{ $t('message.structure4') }}</button></h6>
+                        <p>{{ $t('message.structure5') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-video section-before section-padding-100">
+        <div class="container">
+            <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s"></h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s"></p>
+            </div>
+            <!-- Welcome Video Area -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+                <div class="welcome-video-area wow fadeInUp" data-wow-delay="0.5s">
+                    <!-- Welcome Thumbnail -->
+                    <div class="welcome-thumb">
+                        <img src="../ultimatechain.io/img/bg-img/bg-4.jpg" alt>
+                    </div>
+                    <!-- Video Icon -->
+                    <div class="video-icon">
+                        <!--<a href="https://www.youtube.com/watch?v=gbXEPHsTkgU" class="btn dream-btn video-btn" id="videobtn"><i class="fa fa-play"></i></a>-->
+                        <a href="../ultimatechain.io/video/promo1.MP4" class="btn dream-btn video-btn" id="videobtn"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <!-- ##### Our roadmap Area start ##### -->
+
+    <section class="roadmap section-padding-100-0" style="padding-bottom:0" id="roadmap">
+        <div class="section-heading text-center">
+            <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay="0.3s">{{ $t('message.roadmap1') }}</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">{{ $t('message.roadmap2') }}</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="timeline-split">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="timeline section-box-margin">
+                            <div class="block block-left" v-html="$t('message.roadmap3')"></div>
+                            <div class="block block-right mt--50" v-html="$t('message.roadmap4')"></div>
+                            <div class="block block-left mt--50" v-html="$t('message.roadmap5')"></div>
+                            <div class="block block-right mt--50" v-html="$t('message.roadmap6')"></div>
+                            <div class="block block-left mt--50" v-html="$t('message.roadmap7')"></div>
+                            <div class="block block-right mt--50" v-html="$t('message.roadmap8')"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### Our roadmap Area End ##### -->
+
+
+    <!-- ##### FAQ & Timeline Area Start ##### -->
+    <div class="faq-timeline-area section-padding-100" id="purchase">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7 col-md-12">
+                    <div class="section-heading">
+                        <!-- Dream Dots -->
+                        <div class="dream-dots wow fadeInUp" data-wow-delay="0.2s">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">{{ $t('message.faq1') }}</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin-left:0">{{ $t('message.faq2') }}</p>
+                    </div>
+
+                    <div class="dream-faq-area">
+                        <dl>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.2s">{{ $t('message.faq3') }}</dt>
+                            <dd class="wow fadeInUp" data-wow-delay="0.3s" v-html="$t('message.faq4')"></dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.3s">{{ $t('message.faq5') }}</dt>
+                            <dd v-html="$t('message.faq6')"></dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.4s">{{ $t('message.faq7') }}</dt>
+                            <dd v-html="$t('message.faq8')"></dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.5s">{{ $t('message.faq9') }}</dt>
+                            <dd v-html="$t('message.faq10')"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 offset-lg-0 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+
+                    <div class="ico-counter">
+                        <div class="counter-down">
+
+                            <div class="content">
+                                <div class="conuter-header">
+                                    <h3 class="text-center">{{ $t('message.purchase1') }}</h3>
+                                </div>
+                                <div class="counterdown-content">
+
+                                    <div class="ico-sales-status mb-15 o-hidden">
+                                        <div class="pull-left">
+                                            <h3 class="dollar-earning">{{ (contract.currentprice/1e6).toFixed(2) }} TRX</h3>
+                                            <p style="padding-left:10px" v-html="$t('message.purchase2')">UCHT price<br>(daily increase of 0.28%)</p>
+                                        </div>
+                                        <div class="pull-right">
+                                            <h3 class="btc-earning">70<span>UCHT</span></h3>
+                                            <p>{{ $t('message.purchase3') }}</p>
+                                        </div>
+                                    </div>
+                                    <!-- Countdown  -->
+                                    <div class="count-down titled circled text-center">
+                                        <div class="simple_timer"></div>
+                                    </div>
+                                    <div class="ico-progress">
+                                        <ul class="list-unstyled list-inline clearfix mb-10">
+                                            <!--<li class="title">33m</li>-->
+                                            <li class="strength">80m</li>
+                                        </ul>
+                                        <!-- skill strength -->
+                                        <div class="current-progress">
+                                            <div class="progress-bar has-gradient" :style="'width: '+(contract.totalpurchases*100/6e8).toFixed(0)+'%'"></div>
+                                        </div>
+                                        <!--<span class="pull-left">Softcap in 103 days</span>-->
+                                        <span class="pull-right">{{ $t('message.purchase4') }}</span>
+                                    </div>
+                                    <div class="token-info">
+                                        <div class="info-wrapper">
+                                            <div class="token-icon" style="background-image: url(&quot;../ultimatechain.io/img/svg/token-icon-ucht_1.svg&quot;);"></div>
+                                            <div class="token-descr">{{ mintoken.toFixed(0) }}</div>
+                                        </div>
+                                    </div>
+                                    <div class="calc text-center">
+                                        <div class="row" style="display: inline-flex;">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <button @click="mintoken += 1" class="btn w-100">+1</button>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <button @click="mintoken += 10" class="btn w-100">+10</button>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <button @click="mintoken += 100" class="btn w-100">+100</button>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <button @click="mintoken += 1000" class="btn w-100">+1000</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" @click.prevent="purchases()" class="button mt-30">{{ $t('message.purchase5') }}</a>
+                                        <a href="#" @click.prevent="mintoken = 70" class="button mt-30">{{ $t('message.purchase6') }}</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a v-if="user.airdropcycle < contract.airdropcycle" href="#" @click.prevent="airdrop()" class="button mt-30">{{ $t('message.purchase7') }}</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a v-if="user.purchases > 0" :href="location.origin + '#ref=' + tron.account" target="_blank" @click.prevent="copyText(location.origin + '#ref=' + tron.account)" class="button mt-30">{{ $t('message.purchase8') }}</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="ico-docs">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="doc-element">
+                                    <a class="document-entry" href="../ultimatechain.io/downloads/whitepaper_en.pdf" target="_blank"><span class="title">WhitePaper</span></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="doc-element">
+                                    <a class="document-entry" href="../ultimatechain.io/downloads/certificate.pdf" target="_blank"><span class="title">Certificate</span></a>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="doc-element">
+                                    <a class="document-entry" href="#" target="_blank"><span class="title">Rating Review</span></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="doc-element">
+                                    <a class="document-entry" href="#" target="_blank"><span class="title">Marketing Plan</span></a>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### FAQ & Timeline Area End ##### -->
+
+    <section class="partners">
+
+        <div class="section-heading text-center">
+            <!-- Dream Dots -->
+            <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"></h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"></p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="partner-box">
+                        <a href="https://www.dapp.com/app/ultimate-chain" target="_blank"><img src="../ultimatechain.io/img/partners/dappcom.png" alt="dappcom" class="center-bock"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="partner-box">
+                        <a href="https://dapponline.io/dapp-detail/3890" target="_blank"><img src="../ultimatechain.io/img/partners/dapponline.png" alt="dapponline" class="center-bock"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="partner-box">
+                        <a href="https://dapp.review/dapp/ULTIMATE-CHAIN" target="_blank"><img src="../ultimatechain.io/img/partners/dappreview.png" alt="dappreview" class="center-bock"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-section section-padding-100">
+        <div class="section-heading text-center">
+            <!-- Dream Dots -->
+            <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"></h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"></p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 offset-sm-2 col-md-3 offset-md-2 col-lg-2 offset-lg-1">
+                    <!-- Single Cool Fact -->
+                    <div class="trust-item text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="ico-platform-logo">
+                            <a href="https://cryptototem.com/ultimate-chain-ucht/" target="_blank" rel="nofollow" title="Ultimate Chain (UCHT) rating on CryptoTotem"><img border="0" src="https://cryptototem.com/widgets/imggen.php?w=70&amp;h=70&amp;format=1&amp;color=0&amp;ico_id=24700" alt="Ultimate Chain (UCHT) rating"></a>
+                        </div>
+                        <!-- Single Cool Detail -->
+                        <div class="check">
+                            <!-- <div class="value">8.9</div> -->
+                            <div class="check-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 offset-sm-2 col-md-3 offset-md-2 col-lg-2 offset-lg-2">
+                    <!-- Single Cool Fact -->
+                    <div class="trust-item text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="ico-platform-logo">
+                            <a href="https://icomarks.com/ico/ultimate-chain" target="_blank" rel="nofollow" title="ULTIMATE CHAIN ICO"><img border="0" src="https://icomarks.com/widget/u/ultimate-chain/square.svg" width="70px" height="70px" alt="ULTIMATE CHAIN ICO Rating"></a>
+                        </div>
+                        <!-- Single Cool Detail -->
+                        <div class="check">
+                            <!-- <div class="value">8.9</div> -->
+                            <div class="check-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 offset-sm-2 col-md-3 offset-md-2 col-lg-2 offset-lg-2">
+                    <!-- Single Cool Fact -->
+                    <div class="trust-item text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="ico-platform-logo">
+                            <a href="https://icoholder.com/en/ultimate-chain-32170" target="_blank" rel="nofollow" title="ULTIMATE CHAIN ICO"><img border="0" src="https://icoholder.com/en/big-black-listed/32170.widget.svg?width=70" width="70px" height="70px" alt="ULTIMATE CHAIN ICO Holder"></a>
+                        </div>
+                        <!-- Single Cool Detail -->
+                        <div class="check">
+                            <!-- <div class="value">8.9</div> -->
+                            <div class="check-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### token-distribution Area start ##### -->
+    <!--
+    <section class="token-distribution" id="distribution">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">Our ICO Distribution</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2 class="text-center mb-30">Token Allocation</h2>
+                <div class="token-allocation">
+                    <img src="/img/core-img/allocation.png" class="center-block" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="token-info-wapper"></div>
+                <h2 class="text-center mb-30">More Token Info</h2>
+                <div class="token-info">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('/img/svg/token-icon-1.svg');"></div>
+                        <div class="token-descr">Lorem ipsum dolor sit amet, conse ctetur elit</div>
+                    </div>
+                </div>
+                <div class="token-info">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('/img/svg/token-icon-2.svg');"></div>
+                        <div class="token-descr">Sed quis accumsan nisi Ut ut felis</div>
+                    </div>
+                </div>
+                <div class="token-info">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('/img/svg/token-icon-3.svg');"></div>
+                        <div class="token-descr">felis congue nisl hendrerit commodo</div>
+                    </div>
+                </div>
+                <div class="token-info" style="margin-bottom:0">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('/img/svg/token-icon-4.svg');"></div>
+                        <div class="token-descr">arch nemo sequi rem saepe ad quasi ullam.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    -->
+    <!-- ##### token-distribution Area End ##### -->
+
+    <section class="our_team_area section-padding-100-0 clearfix" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <!-- Dream Dots -->
+                        <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Team</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Image -->
+                        <div class="team-member-thumb">
+                            <img src="../ultimatechain.io/img/team-img/1.png" class="center-block" alt>
+                        </div>
+                        <!-- Team Info -->
+                        <div class="team-info">
+                            <h5>Aubrey Hunt</h5>
+                            <p>Executive Officer</p>
+                        </div>
+                        <!-- Social Icon -->
+                        <div class="team-social-icon">
+                            <a href="../ultimatechain.io/cdn-cgi/l/email-protection/#b5c6c0c5c5dac7c1f5c0d9c1dcd8d4c1d0d6ddd4dcdb9bdcda"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Image -->
+                        <div class="team-member-thumb">
+                            <img src="../ultimatechain.io/img/team-img/2.png" class="center-block" alt>
+                        </div>
+                        <!-- Team Info -->
+                        <div class="team-info">
+                            <h5>Lee Walker</h5>
+                            <p>Business Development</p>
+                        </div>
+                        <!-- Social Icon -->
+                        <div class="team-social-icon">
+                            <a href="../ultimatechain.io/cdn-cgi/l/email-protection/#03707673736c717743766f776a6e627766606b626a6d2d6a6c"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Image -->
+                        <div class="team-member-thumb">
+                            <img src="../ultimatechain.io/img/team-img/3.png" class="center-block" alt>
+                        </div>
+                        <!-- Team Info -->
+                        <div class="team-info">
+                            <h5>Eustace Wilcox</h5>
+                            <p>UX/UI Designer</p>
+                        </div>
+                        <!-- Social Icon -->
+                        <div class="team-social-icon">
+                            <a href="../ultimatechain.io/cdn-cgi/l/email-protection/#87f4f2f7f7e8f5f3c7f2ebf3eeeae6f3e2e4efe6eee9a9eee8"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Image -->
+                        <div class="team-member-thumb">
+                            <img src="../ultimatechain.io/img/team-img/4.png" class="center-block" alt>
+                        </div>
+                        <!-- Team Info -->
+                        <div class="team-info">
+                            <h5>Ilene Thornton</h5>
+                            <p>Head of Marketing</p>
+                        </div>
+                        <!-- Icon -->
+                        <div class="team-social-icon">
+                            <a href="../ultimatechain.io/cdn-cgi/l/email-protection/#14676164647b6660546178607d79756071777c757d7a3a7d7b"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="i-modal" v-if="upmodal.show">
+        <div class="i-modal__wrap">
+            <div class="i-modal__close" @click="upmodal.show = false"></div>
+            <div class="i-modal__body">
+                <div class="i-modal__title">{{ $t('message.sponsor') }}</div>
+                <div class="i-modal__text">
+                    <div v-if="upmodal.edit">
+                        <input type="text" style="color:#000; padding:5px 10px; font:14px; border:1px solid #ccc; max-width:100%;" size="50" v-model="upmodal.upline_edit">
+                        <br>
+                    </div>
+                    <div v-if="!upmodal.edit" style="text-transform:none"><span class="addr">{{ upmodal.upline }} &nbsp;&nbsp;&nbsp; </span><a href="javascript:void(0)" @click="upmodal.edit = true">{{ $t('message.edit') }}</a></div>
+                    <br>
+                    <button class="btn" @click="/^T[1-9A-HJ-NP-Za-km-z]{33}$/i.test(upmodal.upline_edit ? upmodal.upline_edit : upmodal.upline) ? (!(upmodal.show = false) && purchases(upmodal.upline_edit ? upmodal.upline_edit : upmodal.upline)) : null">{{ $t('message.start') }}</button>
+                    <br>
+                    <br>
+                    <p style="text-transform:none;color: #000;" v-html="$t('message.checksponsor')"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="i-modal" v-if="mapmodal.show">
+        <div class="i-modal__wrap">
+            <div class="i-modal__close" @click="mapmodal.show = false"></div>
+            <div class="i-modal__body">
+                <div class="i-modal__title">{{ $t('message.structure3') }}</div>
+                <div class="i-modal__text">
+                    <div class="tree">
+                        <ul class="tree">
+                            <li class :id="'li_l_'+tron.account">
+								<span class="mainaccount_block">
+									<a @click.prevent="showReferrals(tron.account)" class="refs_mainaddress_a">{{ safe(tron.account) }}</a>
+									<span class="mainaccount_search_block">
+										<form onsubmit="return findAccountL()" style="display: flex;">
+											<input type="text" id="account_for_s_l" name="account_for_s" class="mainaccount_search_input" :placeholder="$t('message.inserttronaddress')">
+											<button class="mainaccount_search_button">
+												<i class="mainaccount_search_button_i">
+													<svg class="mainaccount_search_button_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"/></svg>
+												</i>
+											</button>
+										</form>
+									</span>
+									<span class="mainaccount_search_descr">{{ $t('message.structure6') }}</span>
+								</span>
+                                <ul :id="'ul_l_'+tron.account" class="mainul"></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-area bg-img" style="background-image: url(../ultimatechain.io/img/core-img/pattern.png);">
+        <div class="footer-content-area " style="background-image: url(../ultimatechain.io/img/core-img/footer-bg1.png);">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-12 col-md-5">
+                        <div class="footer-copywrite-info">
+                            <!-- Copywrite -->
+                            <div class="copywrite_text wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="footer-logo">
+                                    <a href="#"><img src="../ultimatechain.io/img/core-img/logo.png" alt="logo"> Ultimatechain.</a>
+                                </div>
+                                <p>{{ $t('message.footer1') }}</p>
+                            </div>
+                            <!-- Social Icon -->
+                            <div class="footer-social-info wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="https://github.com/DefiDeveloperIco/ultimatechain#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/ultimate_UCHT" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://medium.com/@ultimatechain" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                                <a href="https://instagram.com/ultimate_chain?igshid=cy1ctpzrvh1e" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://t.me/ultimatechain_maingroup" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <!-- Content Info -->
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.2s">
+                                <h5>{{ $t('message.footer2') }}</h5>
+                                <a href="#home"><p>{{ $t('message.footer3') }}</p></a>
+                                <a href="#purchase"><p>{{ $t('message.footer4') }}</p></a>
+                                <a href="#roadmap"><p>{{ $t('message.footer5') }}</p></a>
+                                <a href="#services"><p>{{ $t('message.footer6') }}</p></a>
+                            </div>
+                            <!-- Content Info -->
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.3s">
+                                <h5>{{ $t('message.footer7') }}</h5>
+                                <a href="https://github.com/DefiDeveloperIco/ultimatechain/wiki/Terms-and-Condition" target="_blank"><p>{{ $t('message.footer8') }}</p></a>
+                                <a href="https://github.com/DefiDeveloperIco/ultimatechain/blob/main/SECURITY.md" target="_blank"><p>{{ $t('message.footer9') }}</p></a>
+                            </div>
+                            <!-- Content Info -->
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.4s">
+                                <h5>{{ $t('message.footer10') }}</h5>
+                                <p><a href="../ultimatechain.io/cdn-cgi/l/email-protection/" class="__cf_email__" data-cfemail="c2b1b7b2b2adb0b682b7aeb6abafa3b6a7a1aaa3abacecabad">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script data-cfasync="false" src="../ultimatechain.io/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../ultimatechain.io/js/jquery.min.js"></script>
+<script src="../ultimatechain.io/js/odometer.min.js"></script>
+<script src="../ultimatechain.io/js/popper.min.js"></script>
+<script src="../ultimatechain.io/js/bootstrap.min.js"></script>
+<script src="../ultimatechain.io/js/plugins.js"></script>
+<script src="../ultimatechain.io/js/dzsparallaxer.js"></script>
+<script src="../ultimatechain.io/js/jquery.syotimer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="../ultimatechain.io/js/i18n_120.js"></script>
+<script src="https://unpkg.com/vue-i18n@8.24.2/dist/vue-i18n.min.js"></script>
+<script src="../ultimatechain.io/js/script_120.js"></script>
+<!--
+a:7:{s:10:"_startsale";O:25:"phpseclib\Math\BigInteger":1:{s:3:"hex";s:8:"5fec5cab";}s:13:"_currentprice";O:25:"phpseclib\Math\BigInteger":1:{s:3:"hex";s:8:"00a99de0";}s:13:"_salesenabled";b:1;s:12:"_totalbuyers";O:25:"phpseclib\Math\BigInteger":1:{s:3:"hex";s:2:"25";}s:15:"_totalpurchases";O:25:"phpseclib\Math\BigInteger":1:{s:3:"hex";s:10:"00dedc9cc0";}s:7:"_period";O:25:"phpseclib\Math\BigInteger":1:{s:3:"hex";s:4:"00d2";}s:13:"_airdropcycle";O:25:"phpseclib\Math\BigInteger":1:{s:3:"hex";s:0:"";}}
+-->
+</body>
+
+</html>
